@@ -1,0 +1,24 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+import React from "react";
+import "../styles/newsletter.css"
+
+const Newsletter = () => {
+    return (
+        <div className="new-container">
+            <div className="new-row">
+                <div className="new-col">
+                    <h2 className="new-title"> Bulletin</h2>
+                        <p className="new-desc">
+                        Recevez des mises à jour en temps opportun de vos produits préférés.</p>
+                    <div className="input-container">
+                        <input type="text" placeholder="Votre E-mail" />
+                        <button><FontAwesomeIcon icon={faPaperPlane} /></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    );
+}
+export default Newsletter
